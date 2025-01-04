@@ -1,0 +1,251 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f6f9fe;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 30px;
+}
+
+.logo img {
+    height: 100%;
+}
+
+.try-free-btn {
+    padding: 8px 30px;
+    background-color: white;
+    border: 1px solid #ff52bf;
+    border-radius: 25px;
+    color: #ff52bf;
+    text-decoration: none;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Hero Section */
+.hero {
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    background-image: url('images/bg-hero-desktop.svg');}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero h1 {
+    font-size: 40px;
+    color: #00252e;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.hero p {
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.get-started-btn {
+    display: inline-block;
+    padding: 15px 60px;
+    background-color: #ff52bf;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    box-shadow: 0 3px 10px rgba(255,82,191,0.3);
+}
+
+/* Features Section */
+.feature {
+    padding: 80px;
+    margin: 40px 0;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.feature-container {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-content {
+    flex: 1;
+}
+
+.feature-image {
+    flex: 1;
+}
+
+.feature h2 {
+    color: #00252e;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.feature p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.feature:nth-child(even) .feature-container {
+    flex-direction: row-reverse;
+}
+
+/* CTA Section */
+.cta-section {
+    text-align: center;
+    padding: 60px 0;
+    margin-top: 40px;
+}
+
+.cta-section h2 {
+    font-size: 32px;
+    color: #00252e;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: #00252e;
+    color: white;
+    padding: 80px 0 40px;
+    margin-top: 100px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+
+.footer-logo {
+    filter: brightness(0) invert(1);
+    height: 30px;
+    margin-bottom: 20px;
+}
+.footer-logo1 {
+    filter: brightness(0) invert(1);
+    height: 20px;
+    /* margin-bottom: 20px; */
+    margin-right: 5px;
+}
+
+.contact-info {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: black;
+    text-decoration: none;
+    width: 32px;
+    height: 32px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links a img {
+    color: black;
+    text-decoration: none;
+    width: 32px;
+    height: 32px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .feature {
+        padding: 40px 20px;
+        margin: 20px;
+    }
+
+    .feature-container {
+        flex-direction: column-reverse !important;
+        gap: 40px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .feature h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .feature p {
+        text-align: center;
+    }
+}
